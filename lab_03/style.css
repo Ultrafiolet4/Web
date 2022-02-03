@@ -1,0 +1,72 @@
+.table
+{
+    border-collapse: collapse;
+    border:3px solid black;
+}
+
+table .day {
+    writing-mode: vertical-rl;
+    text-align: center;
+    text-orientation: upright;
+    border:3px solid black;
+    background-color: #d9e1f2;
+}
+
+table .people,table .group
+{
+    border-bottom:3px solid black;
+    border-right: 1px solid black;
+    background-color:#e2efda;
+}
+
+table .bluef
+{
+    border:3px solid black;
+    background-color: #d9e1f2;
+}
+
+table .lesson
+{
+    border-right:3px solid black;
+    border-bottom:1px solid black;
+    background-color: #d9e1f2;
+}
+
+table .lessonf
+{
+    border-right:3px solid black;
+    background-color: #d9e1f2;
+}
+
+table .rozryad1
+{
+    border-right:3px solid black;
+    border-bottom:1px dashed black;
+    background-color: #d9e1f2;
+}
+
+table .rozryad2
+{
+    border-right:3px solid black;
+    border-bottom:3px solid black;
+    background-color: #d9e1f2;
+}
+
+table .name
+{
+    border:1px solid black;
+}
+
+table .aud
+{
+    border-bottom:3px solid black;
+    border-right: 1px dashed black;
+    background-color:#e2efda;
+    text-align: center;
+}
+
+table .audn
+{
+    border-bottom:1px solid black;
+    border-right: 1px dashed black;
+}
