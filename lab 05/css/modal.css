@@ -1,0 +1,108 @@
+.allwindow{
+	display:none;
+}
+
+.upBlock
+{
+    display:inline-block;
+    padding:15px;
+    background-color:rgb(204, 205, 206);
+    box-shadow: 0 5px 5px #979797;
+}
+
+.header
+{
+    font-family: 'Times New Roman', Times, serif;
+    font-size:20px;
+}
+
+body
+{
+    text-align:center;
+}
+
+.Search {
+    border: 3px solid black;
+	font-size: 16px;
+	width: 230px;
+    height: 40px;
+	border-radius: 10px;
+}
+
+.windowContent {
+	position: relative;
+	background-color: white;
+	height: auto;
+	color: black;
+    z-index:1;
+	margin: 3% auto;
+	padding: 30px;
+	width: 400px;
+	border-radius: 8px;
+	border: 2px solid #808080;
+    font-family: 'Times New Roman', Times, serif;
+    font-size:medium;
+}
+
+.windowHead{
+    display: flex;
+	box-shadow: 0 3px 3px #979797;
+	margin: -25px -30px 30px;
+    justify-content: space-between;
+	padding: auto;
+}
+
+.windowName {
+	color: rgb(9, 161, 243);
+	float: left;
+	font-size: 26px;
+	padding-top:5px;
+	padding-left: 7px;
+}
+
+.close {
+	font-size: 30px;
+    margin: 2px 2px;
+    border-radius: 8px;
+	box-shadow: 0 3px 3px #979797;
+}
+.modalInput{
+	font-size:14px;
+    text-align: center;
+    border-radius: 5px;
+	border: 1px solid lightgrey;
+	padding: 10px;
+	width: 300px;
+    margin:2%;
+}
+
+.choise{
+    text-align: center;
+    border-radius: 5px;
+	border: 1px solid lightgrey;
+	padding: 4px;
+	width: 100px;
+	margin-top:8px;
+}
+
+.windowBody{
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+#image{
+	width: 240px;
+	height: 240px;
+	border: 1px solid black;
+}
+
+.Overlay {
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	opacity: 50%;
+	height: 100%;
+	width: 100%;
+	transform: translate(-50%, -50%);
+	background-color: black;
+}

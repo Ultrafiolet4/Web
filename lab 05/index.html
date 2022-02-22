@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modal</title>
+    <link rel="stylesheet" href="css/button.css">
+    <link rel="stylesheet" href="css/modal.css">
+</head>
+<body>
+    <div class="upBlock">
+        <b class="header">My computer cases</b>
+        <button class="create" onclick=openModal()>Create new case</button>
+        <input type="search" class="Search" placeholder="Search your case...">
+        <button class="search">Search</button>
+        <button class="cancel">Cancel</button>
+    </div>
+    <form id="allWindow" class="allwindow">
+        <div class="windowContent">
+            <div class="windowHead">
+                <span class="windowName">Computer case options</span>
+				<button class="close">&times</button>
+            </div>
+            <div class="windowBody">
+                <div>
+                    <label for="inputCaseModel">Case model:<br>
+                        <input id="inputCaseModel" class="modalInput" placeholder="Input case model...">
+                    </label>
+                </div>
+                <br>
+                <div>
+                    <label for="inputCaseSize">Case size:<br>
+                        <input id="inputCaseSize" class="modalInput" placeholder="Input case size(width,length,height)...">
+                    </label>
+                </div>
+                <br>
+                <div>
+                    <label for="chooseCase">Case form-factor:</label><br>
+                    <select class="modalInput" name="chooseCase">
+                        <option value="Mini Tower">Mini Tower</option>
+                        <option value="Midi Tower">Midi Tower</option>
+                        <option value="Super Tower">Super Tower</option>
+                        <option value="Full Tower">Full Tower</option>
+                    </select>
+                    </label>
+                </div>
+                <br>
+                <div>
+                    <label for="powerSupply">Case power supply:<br>
+                        <select class="choise" name="powerSupply">
+                            <option value="Yes">Так</option>
+                            <option value="No">Ні</option>
+                        </select>
+                    </label>
+                </div>
+                <br>
+                <div>
+                    <label for="choosePorts">Case ports:</label><br>
+                    <input type="checkbox" id="choosePorts" class="modalChoose" name="USB1">
+                    <label for="USB1">USB 1.0</label><br>
+                    <input type="checkbox" id="choosePorts" class="modalChoose" name="USB2">
+                    <label for="USB2">USB 2.0</label><br>
+                    <input type="checkbox" id="choosePorts" class="modalChoose" name="USB3">
+                    <label for="USB3">USB 3.0</label><br>
+                    <input type="checkbox" id="choosePorts" class="modalChoose" name="Thunder">
+                    <label for="Thunder">Thunderbolt 4</label><br>
+                    <input type="checkbox" id="choosePorts" class="modalChoose" name="typec">
+                    <label for="typec">TYPE-C</label><br>
+                    </label>
+                </div>
+                <div>
+                    <br>
+						<label for="inputImage">Select file:<br>
+                            <img id="image" alt="" src="">
+							<input type="file" id="inputImage" class="modalInput" onchange=openImage(this)>
+						</label>
+                </div>
+                <br>
+                <div class="modalButton">
+                    <input type="submit" value="Confirm" class="search">
+                </div>
+            </div>
+        </div>
+        <div class="Overlay"></div>
+    </form>
+</body>
+<script>
+    function openImage(imageElement) {
+        let image = document.getElementById("image");
+        image.src = URL.createObjectURL(imageElement.files[0]);
+    }
+
+    function openModal() {
+        document.getElementById("allWindow").style.display = "block";
+    }
+</script>
+</html>
