@@ -1,0 +1,30 @@
+.all
+{
+    width: 240px;
+    border-radius: 10px;
+    background-color:mediumpurple;
+    border: 3px solid black;
+}
+
+.model
+{
+    margin: 5px;
+    text-align: center;
+}
+
+img
+{
+    width: 230px;
+    height: 230px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+} 
+
+.properties
+{
+    margin-bottom: 5px;
+    text-align: center;
+}
