@@ -1,0 +1,53 @@
+.navbar li:hover ul {
+    visibility: visible;
+    display: block;
+    height: 300%;
+    opacity: 1;
+    background-color: Orange;
+}
+
+.navbar * {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar li {
+    display: block;
+    height: 40px;
+    line-height: 40px;
+    position: relative;
+}
+
+.navbar {
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    background: CornflowerBlue;
+    justify-content: space-around;
+    display: flex;
+    flex-direction: row;
+}
+
+.navbar li:hover {
+    transition: background-color .2s;
+    background-color: Orange;
+}
+
+.navbar ul li:hover{
+    background-color: CornflowerBlue;
+}
+
+.navbar li ul{
+    height: 0;
+    visibility: hidden;
+    background-color: orange;
+    transition: height .5s,opacity .5s,visibility 0s;
+    opacity: 0;
+}
+
+.navbar li a {
+    display: table-cell;
+    min-width: 200px;
+    text-align: center;
+    color: White;
+    text-decoration: none;
+}
