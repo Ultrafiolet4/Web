@@ -1,0 +1,39 @@
+$mainColor:aquamarine;
+$mainBorder:3px solid black;
+$mainFont:20px;
+
+.Variables,.BlockFirst,.BlockSecond
+{
+    display:block;
+    background-color: $mainColor;
+    border: $mainBorder;
+    font-size: $mainFont;
+}
+
+.BlockFirst
+{
+    text-align: center;
+    h2
+    {
+        color:aliceblue;
+    }
+}
+
+@mixin error(){
+    border:5px solid black;
+    background-color: red;
+}
+
+.ErrorButton
+{
+    @extend .Variables;
+    text-align: center;
+}
+
+.ErrorButton:hover
+{
+    @include error();
+}
+
+
+
