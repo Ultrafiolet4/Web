@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Lab.Work 16</title>
+</head>
+<body>
+    <h1>Exercise 1</h1>
+        <div id="test">First</div>
+    <button onclick="setContextOfDivElementVariantOne()">Variant 1</button>
+    <button onclick="setContextOfDivElementVariantTwo()">Variant 2</button>
+    
+    <br>
+    <br>
+
+    <h1>Exercise 2</h1>
+        <img class="image" src="img/dog.jpg" alt="Dog">
+        <br>
+        <button onclick="changeDogImageToCatImage()">Change dog image to cat image</button>
+        <button onclick="openModalWindowWithCatOrDogImage()">Open modal window</button>
+    <div id="modalWindowWithImage" class="modalWindow">
+        <div class="content">
+            <span class="closeModal" onclick="closeModalWindowWithCatOrDogImage()">&times;</span>
+            <img class="Image" src="" alt="">
+        </div>
+    </div>
+    <br>
+    <br>
+
+    <h1>Exercise 3</h1>
+    <br>
+    <h2>Article header</h2>
+    <div id="text">
+    <p>First paragraph</p>
+    <p>Second paragraph</p>
+    <p>Third paragraph</p>
+    </div>
+   <p>Another text</p>
+    <br>
+   <button onclick="getAllBlockDivElements()">Print into console all text contents of div block elements</button>
+    <br>
+    <br>
+
+    <h1>Exercise 4</h1>
+
+    <ul>
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>
+        <li>4</li>
+        <li>5</li>
+    </ul>
+    <button onclick="openModalWithLists()">Open modal</button>
+    <div id="modalWindowEx4" class="modalWindow">
+        <div class="content">
+            <span class="closeModal" onclick="closeModalWithLists()">&times;</span>
+            <p id="firstOrderedList"></p>
+            <p id="secondOrderedList"></p>
+        </div>
+    </div>
+
+    <br>
+    <br>
+
+    <h1>Exercise 5</h1>
+
+    <h1 class="header">I'am a big header!!!</h1>
+    <div id="myDiv">
+        <p>First paragraph</p>
+        <p>Second paragraph</p>
+        <p>Third paragraph</p>
+        <p>Fourth paragraph</p>
+    </div>
+    <ul id="myList">
+        <li>Make</li>
+        <li>me</li>
+        <li>horizontal!</li>
+    </ul>
+    <span class="mySpan">Make me invisible, please!</span>
+    <br>
+    <button onclick="getStyleForAllExerciseFiveElements()">Style for exercise five</button>
+    <br>
+    <br>
+
+    <h1>Exercise 6</h1>
+    <input type="text" id="input1" value="Text1">
+    <input type="text" id="input2" value="Text2"> 
+    <br>
+    <button onclick="gettingTextFromInput()">Enter two messages</button>
+    <button onclick="swapTextsInMessages()">Swap messages</button>     
+    <br>
+    <br>
+
+    <h1>Exercise 7</h1>
+    <div id = "randomHTMLCode"></div>
+    <button onclick="creatingContentWithRandomHTMLCode()">Add element</button>
+    <br>
+    <br>
+
+    <script src="script/script.js"></script>
+</body>
+</html>
